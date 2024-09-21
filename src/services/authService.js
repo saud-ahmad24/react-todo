@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/auth';
+const API_URL = 'https://nestjs-todo-production-67d8.up.railway.app/auth';
 
 const login = async (email, password) => {
   const response = await axios.post(`${API_URL}/login`, { email, password }, { withCredentials: true });
